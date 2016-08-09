@@ -8,6 +8,9 @@ using namespace std;
 
 
 Lexer::Lexer(){
+    line = 1;
+    column = 0;
+    peek = ' ';
     reserve(new Word("create", Tag::CREATE, 0, 0));
     reserve(new Word("view", Tag::VIEW, 0, 0));
     reserve(new Word("as", Tag::AS, 0, 0));
@@ -25,6 +28,9 @@ Lexer::Lexer(){
 }
 
 Lexer::Lexer(string aqlFile) {
+    line = 1;
+    column = 0;
+    peek = ' ';
 	file = fopen(aqlFile.c_str(), "r");
     reserve(new Word("create", Tag::CREATE, 0, 0));
     reserve(new Word("view", Tag::VIEW, 0, 0));

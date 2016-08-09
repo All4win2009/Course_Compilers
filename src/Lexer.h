@@ -62,7 +62,7 @@ public:
 
 class Word : public Token{
 public:
-    string lexeme = "";
+    string lexeme;
     Word(string s, int tag, int l, int c):Token(tag, l, c){
         lexeme = s;
     }
@@ -103,9 +103,9 @@ public:
 
 private:
     FILE *file;
-    int line = 1;
-    int column = 0;
-    char peek = ' ';
+    int line;
+    int column;
+    char peek;
     map<string, Word*> words;
 };
 
