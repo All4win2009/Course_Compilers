@@ -1,35 +1,39 @@
-# AQL_Compiler
-AQL Subset Compiler
+## AQL Subset Compiler    [![Build Status](https://travis-ci.org/All4win2009/Course_Compilers.svg?branch=master)](https://travis-ci.org/All4win2009/Course_Compilers)
 
-1. Where to run
+
+### Where to run
 	
 	The tiny compiler could be run on unix based os.
 
-2. How to run
+### How to run
 
 	'cd ./src' -> 'make clean' -> 'make' -> '.Aql ../dataset/arg1 ../dataset/arg2' 
 	arg1 is the aql file to be executed.
 	arg2 is the text file to be processed, single file and floder are both available.
 
 	Eg:
+
+	```
 	cd ./src
 	make clean
 	make
 	./Aql ../dataset/PerLoc.aql ../dataset/perloc/PerLoc.input
-	or	./Aql ../dataset/PerLoc.aql ../dataset/perloc/
+	or	
+	./Aql ../dataset/PerLoc.aql ../dataset/perloc/
+	```
 
-3. Function
+### Function
 
 	AQL could create views by extract regex from document, extract pattern and select from existent views' columns. It also could output the views.
 
 	The output will be displayed in terminal and output.txt, which is in src floder.
 	
-4. Error Handling
+### Error Handling
 	
 	The errors of aql file will be detected by Parser's matching process.
 	The program will shut down and print the line and column numbers.
 
-5. Grammar
+### Grammar
 
 	The original productions are as follows:
 
