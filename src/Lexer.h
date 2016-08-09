@@ -74,7 +74,7 @@ public:
 
 class Regex : public Token{
 public:
-    string content = "";
+    string content;
     Regex(string s, int tag, int l, int c): Token(tag, l, c){
         content = s;
     }
