@@ -7,7 +7,7 @@ AQL Subset Compiler
 
 2. How to run
 
-	'cd ./src' -> 'make clean' -> 'make' -> '.Aql ../dataset/arg1 ../dataser/arg2' 
+	'cd ./src' -> 'make clean' -> 'make' -> '.Aql ../dataset/arg1 ../dataset/arg2' 
 	arg1 is the aql file to be executed.
 	arg2 is the text file to be processed, single file and floder are both available.
 
